@@ -1,0 +1,52 @@
+html {box-sizing:border-box;}
+*, *:before, *:after {box-sizing:inherit;}
+
+body {
+  padding-top: 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  color:blue;
+}
+
+a{
+  text-decoration: none;
+}
+#users{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#users li{
+  border: 1px black solid;
+  width: 210px;
+  height: 225px;
+  padding: 5px;
+  margin: 6px;
+}
+
+#users li span{
+  display: block;
+}
+
+.name{
+  color: rgb(56, 117, 202);
+  font-size: 18px;
+  line-height: 125%;
+}
+
+img{
+  height: 125px;
+  width: 150px;
+}
+
+span{
+  padding: 5px;
+
+}
+#single span{
+  font-size: 24px;
+}

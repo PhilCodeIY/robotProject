@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <ul id="users">
+      {{#users}}
+      <li>
+          <a href="/user/{{username}}">
+          <img src="{{avatar}}" />
+          <span class="name">{{name}}</span>
+          <span class="position">{{job}} {{company}}</span>
+        </a>
+      </li>
+      {{/users}}
+    </ul>
+</body>
+</html>
