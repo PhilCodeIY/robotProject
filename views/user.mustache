@@ -6,20 +6,53 @@
     <link rel="stylesheet" href="/css/main.css" />
     </head>
     <body>
-      <container>
-        <div id="single">
-          <div><img src="{{avatar}}" /></div>
+
+      <div id="single">
+        <container1>
+          <div><img src="{{avatar}}"></div>
+        </container1>
+
+        <container2>
           <div><span id="name2" class="name2">{{name}}</span></div>
-          <div><span class="city">{{address.city}},
-            {{address.country}} | {{job}}, {{company}}</span></div>
+          <div><span class="city">{{address.city}}{{^address.city}}<span class = "missing" ></span>{{/address.city}}
+            {{address.country}} | {{job}}{{^job}}<span class = "missing" >Available for hire</span>{{/job}}{{company}}</span></div>
           <div><span class="email">{{email}} | {{phone}}</span></div>
-          <div><span </span></div>
-          <div><span class="Education"><b><h3>Education</h1></b> {{university}}</span></div>
-          <div><span class="Skills"><b>Skills</b> {{skills}}</span></div>
-        </div>
-
-        </container>
+          <div><span></span></div>
+        </container2>
 
 
+        <container4>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+          <table>
+            <tr>
+              <td>
+                {{#university}}
+                    <div><span class = "schoool">Education</span></div>
+              </td>
+            <td>
+                    <div><span>{{university}}<span></div>
+
+                {{/university}}
+                    {{^university}}<span class = "missing" ></span>
+                  {{/university}}
+            </td>
+
+            <tr>
+              <td>
+                <div><span>Skills</span></div>
+              </td>
+
+              <td class = "skills">
+                {{#skills}}
+                  {{.}}<br />
+                {{/skills}}
+              </td>
+             </tr>
+        </table>
+
+        </container4>
+      </div>
     </body>
     </html>

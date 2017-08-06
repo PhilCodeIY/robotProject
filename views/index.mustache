@@ -12,7 +12,7 @@
           <a href="/user/{{username}}">
           <img src="{{avatar}}" />
           <span class="name">{{name}}</span>
-          <span class="position">{{job}} {{company}}</span>
+          <span class="position">{{job}}{{^job}}<span class = "missing" >Available for hire</span>{{/job}} {{company}}</span>
         </a>
       </li>
       {{/users}}

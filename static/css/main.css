@@ -47,6 +47,91 @@ span{
   padding: 5px;
 
 }
+#single{
+  padding-top: 75px;
+  max-width: 800px;
+  margin: auto;
+  max-height: 800px;
+  font-family: arial;
+
+}
 #single span{
+  font-size: 16px;
+  padding: 0px 0px 10px 15px;
+}
+
+.name2{
   font-size: 24px;
+}
+#single body {
+    padding-top: 50px;
+    max-width: 600px;
+    margin: auto;
+    max-height: 800px;
+
+}
+#single .name2{
+  font-size: 48px;
+}
+#single ul{
+  margin: 0px;
+  padding: 0px;
+}
+#single li{
+  list-style: none;
+margin: 0px;
+padding: 0px;
+}
+#single img{
+border-radius: 50%;
+border: 1px solid grey;
+float: left;
+margin-right: 20px;
+height: 150px;
+}
+
+
+#single h3{
+  margin: 0px 0px 0px 0px;
+  float: left;
+  font-size: 16px;
+}
+
+#single container2{
+margin-top: auto;
+  justify-content: center;
+}
+
+/*#single container4{
+  font-family: arial;
+  font-size: 14px;
+}*/
+
+table{
+  font-family: arial;
+  font-size: 14px;
+  margin-left: 75px;
+}
+
+td{
+  text-align: right;
+  vertical-align: text-top;
+  padding: 0px;
+}
+tr{
+  text-align: right;
+  padding: 0px;
+}
+
+.school{
+  padding-left: 15px;
+}
+.skills{
+  text-align: left;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.missing{
+  color: rgb(193, 106, 93);
 }
