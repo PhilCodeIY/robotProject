@@ -31,4 +31,18 @@ router.get("/user/:username", function(req, res, next){
   res.render("user", user)
 })
 
+router.get("/working", function(req, res, next){
+  const working = data.users.filter(function(work){
+    return work.company
+  })
+  res.render("working", {working: working})
+})
+
+router.get("/notWorking", function(req, res, next){
+  const notWorking = data.users.filter(function(notwork){
+    return !notwork.company
+  })
+  res.render("notWorking", {notWorking: notWorking})
+})
+
 module.exports = router
